@@ -11,7 +11,7 @@ body {
 
 #home {
   height: 100vh;
-  background: url("./yellow-background.jpg");
+  background: url("./images/yellow-background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ h3 {
 }
 
 .contact {
-  background: url("./yellow-background.jpg");
+  background: url("./images/yellow-background.jpg");
   background-size: cover;
   margin: 0;
 }
@@ -99,7 +99,7 @@ header {
 nav {
   padding: 3.5vh 3vh 0 2vh;
   height: 15vh;
-  background: url("./abstract-paint-backgrounds-2.png");
+  background: url("./images/abstract-paint-backgrounds-2.png");
 }
 
 .nav-link {
