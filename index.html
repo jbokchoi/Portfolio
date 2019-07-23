@@ -30,7 +30,7 @@
     <!-- HOME -->
     <section id="home">
       <div>
-        <div>
+        <div class="home-header">
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -153,13 +153,30 @@
             </g>
             <line class="st1" x1="77.2" y1="126.4" x2="545.2" y2="126.4" />
           </svg>
+          <h3>software engineer</h3>
         </div>
       </div>
-      <hr />
-      <h3>software engineer</h3>
-      <a class="waves-effect btn-large btn-flat" id="button" href="#projects">
-        view my work</a
-      >
+      <div>
+        <a id="button" href="#projects">
+          view my work <i class="fa fa-arrow-circle-down"></i
+        ></a>
+      </div>
+      <div class="contact-details-home">
+        <div class="icons-home">
+          <a href="mailto:jessica.k.choi@gmail.com">
+            <i class="fa fa-envelope"></i></a
+          >&nbsp &nbsp
+          <a href="https://github.com/jbokchoi" target="_blank"
+            ><i class="devicon-github-plain"></i></a
+          >&nbsp &nbsp
+          <a
+            href="https://www.linkedin.com/in/jessica-choiyvr/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </section>
     <a name="about"></a>
     <section>
@@ -182,12 +199,12 @@
           <div class="container" id="profile">
             <img src="./images/Jess.jpg" class="prof-pic" />
             <p>
-              Hi! I’m Jess. I’m a full-stack developer with extensive experience
-              as a communication and fundraising professional, specializing in
-              digital solutions for the arts and cultural sector. I work with
-              clients to develop audiences, grow profiles and build
-              relationships. I am passionate about the arts and firmly believe
-              in its power to transform lives.
+              Hi, I’m Jess! I’m a full-stack software engineer with extensive
+              experience as a communication and fundraising professional,
+              specializing in digital solutions for the arts and cultural
+              sector. I work with clients to develop audiences, grow profiles
+              and build relationships. I am passionate about the arts and firmly
+              believe in its power to transform lives.
             </p>
           </div>
         </div>
@@ -221,144 +238,13 @@
         <div class="projects-header">
           <h1 class="titles">projects</h1>
           <div class="project-links">
-            <a href="#project1">Ride-the-Bus</a> |
-            <a href="#project2">Partners in Wine</a> |
-            <a href="#project3">the datǝbase</a> |
-            <a href="#project4">The Dancers' Hub</a>
+            <a href="#project1">the datǝbase</a> |
+            <a href="#project2">The Dancers' Hub</a> |
+            <a href="#project3">Partners in Wine</a> |
+            <a href="#project4">Ride-the-Bus</a>
           </div>
         </div>
         <div>
-          <div class="row" id="project">
-            <div class="col s12 container">
-              <div class="row">
-                <div class="col s12 m12 l6">
-                  <a
-                    href="https://jbokchoi.github.io/Ride-the-Bus/"
-                    target="_blank"
-                  >
-                    <img
-                      class="col s12 project-img"
-                      src="./images/Ride-the-Bus.png"
-                  /></a>
-                </div>
-                <div class="col s12 m12 l6">
-                  <h5>
-                    <a
-                      href="https://jbokchoi.github.io/Ride-the-Bus/"
-                      target="_blank"
-                      id="button-links"
-                    >
-                      Ride-the-Bus
-                    </a>
-                    <a
-                      href="https://github.com/jbokchoi/Ride-the-Bus"
-                      target="_blank"
-                      id="button-links"
-                      ><i class="fa fa-github"></i
-                    ></a>
-                    <a
-                      href="https://jbokchoi.github.io/Ride-the-Bus/"
-                      target="_blank"
-                      id="button-links"
-                      ><i class="fa fa-desktop"></i
-                    ></a>
-                  </h5>
-                  <p>
-                    A take on a classic high-low drinking card game.
-                    <br /><br />Ride-the-Bus's win/loss logic was designed using
-                    JavaScript and the visual components brought together with
-                    HTML5, CSS3 and Bootstrap.
-                  </p>
-                  <br />
-                  <h6>technologies:</h6>
-                  <a name="project2"></a>
-                  <p>
-                    HTML5 | CSS3 | JavaScript
-                  </p>
-                  <div class="icons">
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-          <div class="row" id="project">
-            <div class="col s12 container">
-              <div class="row">
-                <div class="col s12 m12 l6">
-                  <a
-                    href="https://partners-in-wine.herokuapp.com/"
-                    target="_blank"
-                  >
-                    <img
-                      class="col s12 project-img"
-                      src="./images/partners-in-wine.png"
-                    />
-                  </a>
-                </div>
-                <div class="col s12 m12 l6">
-                  <h5>
-                    <a
-                      href="https://partners-in-wine.herokuapp.com/"
-                      target="_blank"
-                      id="button-links"
-                    >
-                      Partners in Wine
-                    </a>
-                    <a
-                      href="https://github.com/jbokchoi/partners-in-wine"
-                      target="_blank"
-                      id="button-links"
-                      ><i class="fa fa-github"></i
-                    ></a>
-                    <a
-                      href="https://partners-in-wine.herokuapp.com/"
-                      target="_blank"
-                      id="button-links"
-                      ><i class="fa fa-desktop"></i
-                    ></a>
-                  </h5>
-                  <p>
-                    A social catalog app that allows users to rate wines, keep
-                    track of their favorites, see what others are drinking.
-                    <br /><br />
-
-                    The wireframes and ERD for Partners in Wine were created
-                    using Adobe XD while the project was managed with Trello.
-                    Verison control and testing was managed using Git. Partners
-                    in Wine was built with CRUD functionality using JavaScript
-                    on Node.js and Express frameworks, HTML5 and CSS3 to create
-                    front-end views, and MongoDB, MongoDB Atlas and Mongoose to
-                    store and retrieve data. User authentication was implemented
-                    using OAuth and Passport.js.
-                  </p>
-                  <br />
-                  <h6>technologies:</h6>
-                  <p>
-                    HTML5 | CSS3 | JavaScript | Node.js | Express | MongoDB |
-                    Mongoose | OAuth | Passport.js | Git | GitHub | Heroku |
-                    Adobe XD
-                  </p>
-                  <a name="project3"></a>
-                  <div class="icons">
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <i class="devicon-express-original colored"></i>
-                    <i class="devicon-mongodb-plain colored"></i>
-                    <i class="devicon-github-plain colored"></i>
-                    <i class="devicon-heroku-original-wordmark colored"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <hr />
           <div class="row" id="project">
             <div class="col s12 container">
@@ -414,7 +300,7 @@
                     Calendar API | Adobe XD | Adobe InDesign | Adobe Photoshop |
                     Adobe Illustrator
                   </p>
-                  <a name="project4"></a>
+                  <a name="project2"></a>
                   <div class="icons">
                     <i class="devicon-html5-plain-wordmark colored"></i>
                     <i class="devicon-css3-plain-wordmark colored"></i>
@@ -487,6 +373,7 @@
                     Adobe XD
                   </p>
                   <div class="icons">
+                    <a name="project3"></a>
                     <i class="devicon-html5-plain-wordmark colored"></i>
                     <i class="devicon-css3-plain-wordmark colored"></i>
                     <i class="devicon-javascript-plain colored"></i>
@@ -498,6 +385,137 @@
                     <i class="devicon-bootstrap-plain-wordmark colored"></i>
                     <i class="devicon-heroku-original-wordmark colored"></i>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row" id="project">
+          <div class="col s12 container">
+            <div class="row">
+              <div class="col s12 m12 l6">
+                <a
+                  href="https://partners-in-wine.herokuapp.com/"
+                  target="_blank"
+                >
+                  <img
+                    class="col s12 project-img"
+                    src="./images/partners-in-wine.png"
+                  />
+                </a>
+              </div>
+              <div class="col s12 m12 l6">
+                <h5>
+                  <a
+                    href="https://partners-in-wine.herokuapp.com/"
+                    target="_blank"
+                    id="button-links"
+                  >
+                    Partners in Wine
+                  </a>
+                  <a
+                    href="https://github.com/jbokchoi/partners-in-wine"
+                    target="_blank"
+                    id="button-links"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                  <a
+                    href="https://partners-in-wine.herokuapp.com/"
+                    target="_blank"
+                    id="button-links"
+                    ><i class="fa fa-desktop"></i
+                  ></a>
+                </h5>
+                <p>
+                  A social catalog app that allows users to rate wines, keep
+                  track of their favorites, see what others are drinking.
+                  <br /><br />
+
+                  The wireframes and ERD for Partners in Wine were created using
+                  Adobe XD while the project was managed with Trello. Verison
+                  control and testing was managed using Git. Partners in Wine
+                  was built with CRUD functionality using JavaScript on Node.js
+                  and Express frameworks, HTML5 and CSS3 to create front-end
+                  views, and MongoDB, MongoDB Atlas and Mongoose to store and
+                  retrieve data. User authentication was implemented using OAuth
+                  and Passport.js.
+                </p>
+                <br />
+                <h6>technologies:</h6>
+                <p>
+                  HTML5 | CSS3 | JavaScript | Node.js | Express | MongoDB |
+                  Mongoose | OAuth | Passport.js | Git | GitHub | Heroku | Adobe
+                  XD
+                </p>
+                <a name="project4"></a>
+                <div class="icons">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
+                  <i class="devicon-nodejs-plain colored"></i>
+                  <i class="devicon-express-original colored"></i>
+                  <i class="devicon-mongodb-plain colored"></i>
+                  <i class="devicon-github-plain colored"></i>
+                  <i class="devicon-heroku-original-wordmark colored"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="row" id="project">
+          <div class="col s12 container">
+            <div class="row">
+              <div class="col s12 m12 l6">
+                <a
+                  href="https://jbokchoi.github.io/Ride-the-Bus/"
+                  target="_blank"
+                >
+                  <img
+                    class="col s12 project-img"
+                    src="./images/Ride-the-Bus.png"
+                /></a>
+              </div>
+              <div class="col s12 m12 l6">
+                <h5>
+                  <a
+                    href="https://jbokchoi.github.io/Ride-the-Bus/"
+                    target="_blank"
+                    id="button-links"
+                  >
+                    Ride-the-Bus
+                  </a>
+                  <a
+                    href="https://github.com/jbokchoi/Ride-the-Bus"
+                    target="_blank"
+                    id="button-links"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                  <a
+                    href="https://jbokchoi.github.io/Ride-the-Bus/"
+                    target="_blank"
+                    id="button-links"
+                    ><i class="fa fa-desktop"></i
+                  ></a>
+                </h5>
+                <p>
+                  A take on a classic high-low drinking card game.
+                  <br /><br />Ride-the-Bus's win/loss logic was designed using
+                  JavaScript and the visual components brought together with
+                  HTML5, CSS3 and Bootstrap.
+                </p>
+                <br />
+                <h6>technologies:</h6>
+                <a name="contact"></a>
+                <p>
+                  HTML5 | CSS3 | JavaScript
+                </p>
+                <div class="icons">
+                  <i class="devicon-html5-plain-wordmark colored"></i>
+                  <i class="devicon-css3-plain-wordmark colored"></i>
+                  <i class="devicon-javascript-plain colored"></i>
                 </div>
               </div>
             </div>
