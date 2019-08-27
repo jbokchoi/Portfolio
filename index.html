@@ -182,10 +182,22 @@
     <section>
       <!-- NAV -->
       <header>
+        <ul class="dropdown-content" id="dropdown">
+          <li><a href="#about" class="nav-link">about</a></li>
+          <li><a href="#projects" class="nav-link">portfolio</a></li>
+          <li><a href="#contact" class="nav-link">contact</a></li>
+        </ul>
         <nav>
           <div class="nav-wrapper">
             <a href="#about" class="brand-logo left" id="logo"> Jess Choi</a>
-            <ul id="nav-mobile" class="right">
+            <a
+              href="#"
+              data-target="dropdown"
+              class="dropdown-trigger"
+              style="float: right; color: black; size: 2rem"
+              ><i class="fa fa-bars"></i
+            ></a>
+            <ul class="right hide-on-med-and-down">
               <li><a href="#about" class="nav-link">about</a></li>
               <li><a href="#projects" class="nav-link">portfolio</a></li>
               <li><a href="#contact" class="nav-link">contact</a></li>
@@ -233,11 +245,12 @@
       </div>
 
       <!-- PROJECTS-->
-      <a name="project1"></a>
+      <a name="project5"></a>
       <div class="projects">
         <div class="projects-header">
           <h1 class="titles">projects</h1>
           <div class="project-links">
+            <a href="#project5">Safe Parking LA</a> |
             <a href="#project1">the datǝbase</a> |
             <a href="#project2">The Dancers' Hub</a> |
             <a href="#project3">Partners in Wine</a> |
@@ -249,8 +262,85 @@
             <div class="col s12 container">
               <div class="row">
                 <div class="col s12 m12 l6">
+                  <a href="http://spla-app.herokuapp.com/" target="_blank">
+                    <img class="col s12 project-img" src="./images/SPLA.png"
+                  /></a>
+                </div>
+                <div class="col s12 m12 l6">
+                  <h5>
+                    <a
+                      href="https://github.com/jbokchoi/SPLA-Redesign/tree/master/spla-redesign"
+                      target="_blank"
+                      id="button-links"
+                    >
+                      Safe Parking LA</a
+                    >
+                    <a
+                      href="https://github.com/jbokchoi/SPLA-Redesign/tree/master/spla-redesign"
+                      target="_blank"
+                      id="button-links"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="http://spla-app.herokuapp.com/"
+                      target="_blank"
+                      id="button-links"
+                      ><i class="fa fa-desktop"></i
+                    ></a>
+                  </h5>
+                  <h6>
+                    <i
+                      style="color: #FFBD30; font-size: 1.5em"
+                      class="fa fa-trophy"
+                    ></i>
+                    &nbsp Awarded the Crowd Favorite Award
+                  </h6>
+                  <p>
+                    Worked with non-profit Safe Parking LA to redesign their
+                    client-facing mobile site and streamline their applicaiton
+                    form for users while making results more scannable for the
+                    organization.
+                    <br /><br />
+                    In this three-day social impact hackathon, working in a team
+                    of six (three developers, three UX designers), we built a
+                    responsive web-browser application to streamline processes
+                    for both website users and SPLA staff. A key priority for
+                    the team was to build a more user-friendly site (application
+                    form and better sign-posting to services), while using tools
+                    and resources the SPLA team already had access to and/or
+                    already knew how to use.
+                  </p>
+                  <br />
+                  <h6>technologies:</h6>
+                  <p>
+                    React | HTML5 | CSS3 | JavaScript | Node.js | AirTable API |
+                    Google Forms | Zapier | Bootstrap | React Bootstrap | Heroku
+                    | Adobe Photoshop | Adobe Illustrator | Zeplin | Sketch
+                  </p>
+                  <a name="project2"></a>
+                  <div class="icons">
+                    <i class="devicon-react-original-wordmark colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <i class="devicon-github-plain colored"></i>
+                    <a name="project1"></a>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-heroku-original-wordmark colored"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="project">
+            <div class="col s12 container">
+              <div class="row">
+                <div class="col s12 m12 l6">
                   <a href="https://datebase-app.herokuapp.com/" target="_blank">
-                    <img class="col s12 project-img" src="./images/datebase.png"
+                    <img
+                      class="col s12 project-img"
+                      src="./images/datebase1.png"
                   /></a>
                 </div>
                 <div class="col s12 m12 l6">
@@ -322,7 +412,7 @@
                   <a href="http://thedancershub.herokuapp.com/" target="_blank">
                     <img
                       class="col s12 project-img"
-                      src="./images/dancershub.png"
+                      src="./images/dancershub1.png"
                     />
                   </a>
                 </div>
@@ -398,7 +488,7 @@
                 >
                   <img
                     class="col s12 project-img"
-                    src="./images/partners-in-wine.png"
+                    src="./images/partners-in-wine1.png"
                   />
                 </a>
               </div>
@@ -471,7 +561,7 @@
                 >
                   <img
                     class="col s12 project-img"
-                    src="./images/Ride-the-Bus.png"
+                    src="./images/Ride-the-Bus1.png"
                 /></a>
               </div>
               <div class="col s12 m12 l6">
@@ -543,4 +633,10 @@
       </div>
     </section>
   </body>
+  <script>
+    var dropdowns = document.querySelectorAll(".dropdown-trigger");
+    for (var i = 0; i < dropdowns.length; i++) {
+      M.Dropdown.init(dropdowns[i]);
+    }
+  </script>
 </html>
